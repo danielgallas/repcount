@@ -1,3 +1,36 @@
+###### REP COUNT
+
+# DESCRIPTION OF THE APP
+
+An app that simply counts how many reps I do per day of an exercise. It awards points that are added up and kept seven days, similar do PAI points in Fitbit apps. Long term commitment with certain PAI awards special points (which I will decide later)/
+
+# DETAILS
+
+It has a header - with the name of the app.
+It has one dashboard - which shows PAI points and the selection of exercises I can tap in.
+It has a Exercise page, that will be used to input reps.
+It will be responsive, but mostly thought for mobile.
+It will have a footer.
+MongoDB and Express.js servers will store info in the backend.
+Coolors: https://coolors.co/bac7be-c2e1c2-7dcd85-80ab82-778472
+Coolers (this one): https://coolors.co/f83f78-f7ed9a-e8bbe4-940f89-41c0df-b9d42c-f77d21
+
+# TO DO LIST
+
+- Start with the grid of the dashboard
+
+# DONE
+
+#
+
+#
+
+#
+
+#
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
