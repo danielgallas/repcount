@@ -2,8 +2,12 @@ const express = require("express");
 const app = express();
 const connectDB = require("./db/connect");
 require("dotenv").config();
+const reps = require("./routes/reps");
 
 const port = 8000;
+
+// routes
+app.use("/api/v1/reps", reps);
 
 const start = async () => {
   try {
