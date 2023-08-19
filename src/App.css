@@ -108,3 +108,22 @@
   flex: 1 1;
   align-self: center;
 }
+
+.flex-item-setexercise-minus {
+  flex: 1 1;
+  align-self: center;
+}
+
+.flex-item-setexercise-plus {
+  flex: 1 1;
+  align-self: center;
+}
+
+.flex-item-setexercise-submit {
+  flex: 2 2;
+  align-self: center;
+}
+
+.setexercise {
+  background-color: var(--safety-orange);
+}
