@@ -6,6 +6,9 @@ const reps = require("./routes/reps");
 
 const port = 8000;
 
+// middleware
+app.use(express.json());
+
 // routes
 app.use("/api/v1/reps", reps);
 
