@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 const repsSchema = new mongoose.Schema({
-  date: { type: String },
-  reps: { type: String },
+  date: { type: Date },
+  reps: { type: Array },
 });
 
 module.exports = mongoose.model("Reps", repsSchema);

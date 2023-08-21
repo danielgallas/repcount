@@ -1,12 +1,32 @@
-// const Reps = require("../models/Reps");
+const Reps = require("../models/Reps");
 
 const create = async (req, res) => {
   try {
-    await console.log(req.body);
+    const Data = await Reps.create(req.body);
     res.status(201).send(req.body);
   } catch (error) {
     res.status(400).send(error);
   }
 };
 
-module.exports = { create };
+const getTodayData = async (req, res) => {
+  try {
+    console.log(req.body.date);
+    const Data = await Reps.findOne({ date: req.body.date });
+    res.status(201).send(Data);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+};
+
+const updateData = async (req, res) => {
+  try {
+    console.log(req.body.date);
+    const Data = await Reps.findOneAndUpdate({ date: req.body.date }, req.body);
+    res.status(201).send(Data);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+};
+
+module.exports = { create, getTodayData, updateData };

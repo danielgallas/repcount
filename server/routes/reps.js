@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { create } = require("../components/reps");
+const { create, getTodayData, updateData } = require("../components/reps");
 
-router.route("/").post(create);
+router.route("/").get(getTodayData).post(create).put(updateData);
 
 module.exports = router;
