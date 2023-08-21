@@ -11,8 +11,8 @@ const create = async (req, res) => {
 
 const getTodayData = async (req, res) => {
   try {
-    console.log(req.body.date);
-    const Data = await Reps.findOne({ date: req.body.date });
+    console.log(req.params.date);
+    const Data = await Reps.findOne({ date: req.params.date });
     res.status(201).send(Data);
   } catch (error) {
     res.status(400).send(error);
@@ -21,8 +21,12 @@ const getTodayData = async (req, res) => {
 
 const updateData = async (req, res) => {
   try {
-    console.log(req.body.date);
-    const Data = await Reps.findOneAndUpdate({ date: req.body.date }, req.body);
+    console.log(req.params.date);
+    const Data = await Reps.findOneAndUpdate(
+      { date: req.params.date },
+      req.body
+    );
+    console.log(Data);
     res.status(201).send(Data);
   } catch (error) {
     res.status(400).send(error);
