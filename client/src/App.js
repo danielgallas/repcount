@@ -4,6 +4,7 @@ import Points from "./Components/Points";
 import ChooseExercise from "./Components/ChooseExercise";
 import SetRepsExercise from "./Components/SetRepsExercise";
 import FinalSubmit from "./Components/FinalSubmit";
+import CalculatePoints from "./Components/CalculatePoints";
 import { Exercises } from "./Data/Exercises";
 import React, { useState } from "react";
 
@@ -30,6 +31,7 @@ function App() {
           <SetRepsExercise exercise={workout} />
         )}
         <FinalSubmit exercise={Exercises} />
+        <CalculatePoints />
       </ToggleContext.Provider>
     </div>
   );

@@ -22,7 +22,7 @@
   grid-template-rows: 100px 35vh repeat(auto-fill, 100px);
   column-gap: 5px;
   row-gap: 15px;
-  height: 1000px;
+  height: 1500px;
   overflow: scroll;
 }
 
