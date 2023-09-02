@@ -13,11 +13,12 @@ export const ToggleContext = React.createContext();
 function App() {
   const [toggle, setToggle] = useState(true);
   const [workout, setWorkout] = useState([]);
+  const [points, setPoints] = useState(72);
 
   return (
     <div className="grid-container">
       <ToggleContext.Provider
-        value={{ toggle, setToggle, workout, setWorkout }}
+        value={{ toggle, setToggle, workout, setWorkout, points, setPoints }}
       >
         <Header />
         <Points />

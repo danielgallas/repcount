@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ToggleContext } from "../App";
 
 const Points = () => {
+  const { points } = useContext(ToggleContext);
+
   return (
     <div className="grid-item-points flex-container">
       <div className="flex-item-points">
         <div className="text">
-          <p>73</p>
+          <p>{points}</p>
           <span>points</span>
         </div>
       </div>
